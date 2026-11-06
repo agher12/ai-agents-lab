@@ -1,0 +1,8 @@
+flask
+langchain==1.2.7
+langchain-google-genai
+langgraph-checkpoint-postgres
+psycopg[binary]
+psycopg-pool
+python-dotenv
+requests

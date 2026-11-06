@@ -9,6 +9,6 @@ __pycache__/
 **/.idea/
 *.db
 **/*.db
-main.py
 main_postgre.py
 main_real.py
+!.env.example

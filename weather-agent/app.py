@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from agent import agent
+import os
 import uuid
 app = Flask(__name__)
-app.secret_key = 'your secret key'
+app.secret_key = os.getenv('FLASK_SECRET_KEY', os.urandom(24))
 
 @app.route('/')
 def home():
@@ -39,4 +40,5 @@ def send():
     print(session)
     return redirect(url_for('home'))
 
-app.run(debug=True, use_reloader=False)
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=False)

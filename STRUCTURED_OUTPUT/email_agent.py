@@ -5,7 +5,6 @@ from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent
 from pydantic import BaseModel, Field
 from typing import List
-from recipe_generator import response
 
 load_dotenv()
 

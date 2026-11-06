@@ -1,6 +1,3 @@
-from urllib import response
-
-from flask import session
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from langchain.agents import create_agent
